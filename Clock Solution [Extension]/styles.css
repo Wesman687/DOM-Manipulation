@@ -23,6 +23,11 @@
   background-color: black;
   transform-origin: bottom;
 }
+.handle__mili {
+  width: 1px;
+  
+  height: 300px;
+}
 
 .handle__minute {
   width: 2px;

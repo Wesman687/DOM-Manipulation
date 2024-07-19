@@ -1,50 +1,81 @@
 #clock {
+    position: relative;
     background-color: rgba(0,0,0,0.2);
     width: 500px;
     height: 500px;
-    border-radius: 50%;
-    position: relative;
+    border-radius: 50%;    
+}
+.handle {
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: bottom;
+}
+.handle__milli {
+    width: .5px;
+    height: 240px;
+    background-color: red;
+
+}
+.handle__second {
+    width: 1px;
+    height: 200px;
+    background-color: rgb(3, 3, 3);
+}
+.handle__minute {
+    width: 4px;
+    height: 180px;
+    background-color: rgb(53, 53, 53);
+}
+.handle__hour {
+    width: 8px;
+    height: 120px;
+    background-color: rgb(0, 0, 0);
 }
 .number {
-    position: absolute;
-    top: 0;
+    text-align: center;    
+    font-size: 22px;
     width: 100%;
     height: 100%;
-    text-align: center;
-    transform: rotate(0deg);
-    font-size: 24px;
+    position: absolute;
 }
-
-.number:nth-of-type(1) {
+.number:nth-of-type(1){
     transform: rotate(30deg);
 }
-.number:nth-of-type(2) {
+
+.number:nth-of-type(2){
     transform: rotate(60deg);
 }
-.number:nth-of-type(3) {
+.number:nth-of-type(3){
     transform: rotate(90deg);
 }
-.number:nth-of-type(4) {
+.number:nth-of-type(4){
     transform: rotate(120deg);
 }
-.number:nth-of-type(5) {
+.number:nth-of-type(5){
     transform: rotate(150deg);
 }
-.number:nth-of-type(6) {
+.number:nth-of-type(6){
     transform: rotate(180deg);
 }
-.number:nth-of-type(7) {
+.number:nth-of-type(7){
     transform: rotate(210deg);
 }
-.number:nth-of-type(8) {
+.number:nth-of-type(8){
     transform: rotate(240deg);
 }
-.number:nth-of-type(9) {
+.number:nth-of-type(9){
     transform: rotate(270deg);
 }
-.number:nth-of-type(10) {
+.number:nth-of-type(10){
     transform: rotate(300deg);
 }
-.number:nth-of-type(11) {
+.number:nth-of-type(11){
     transform: rotate(330deg);
+}
+.number:nth-of-type(12){
+    transform: rotate(360deg);
 }
